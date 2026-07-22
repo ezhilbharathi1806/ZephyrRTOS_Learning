@@ -1,0 +1,3 @@
+/home/ezhil/embedded/zephyr_workspace/apps/03_demo_kconfig/build/bootloader/CMakeFiles/boot_stage2.dir
+/home/ezhil/embedded/zephyr_workspace/apps/03_demo_kconfig/build/bootloader/CMakeFiles/edit_cache.dir
+/home/ezhil/embedded/zephyr_workspace/apps/03_demo_kconfig/build/bootloader/CMakeFiles/rebuild_cache.dir

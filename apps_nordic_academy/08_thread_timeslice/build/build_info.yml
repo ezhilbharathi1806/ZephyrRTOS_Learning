@@ -1,0 +1,47 @@
+cmake:
+  application:
+    configuration-dir: '/home/ezhil/embedded/zephyr_workspace/apps_nordic_academy/08_thread_timeslice'
+    source-dir: '/home/ezhil/embedded/zephyr_workspace/apps_nordic_academy/08_thread_timeslice'
+  board:
+    name: 'rpi_pico'
+    path:
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/boards/raspberrypi/rpi_pico'
+    qualifiers: 'rp2040'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/bindings'
+    files:
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/boards/raspberrypi/rpi_pico/rpi_pico.dts'
+    include-dirs:
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/include'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/common'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/vendor'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/rx'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/x86'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/xtensa'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/sparc'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/riscv'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/posix'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/arm64'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/arm'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts/arc'
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/ezhil/embedded/zephyr_workspace/zephyr/boards/raspberrypi/rpi_pico/rpi_pico_defconfig'
+     - '/home/ezhil/embedded/zephyr_workspace/apps_nordic_academy/08_thread_timeslice/prj.conf'
+    user-files:
+     - '/home/ezhil/embedded/zephyr_workspace/apps_nordic_academy/08_thread_timeslice/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/ezhil/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.3.99'
+    zephyr-base: '/home/ezhil/embedded/zephyr_workspace/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/ezhil/embedded/zephyr_workspace/zephyr-env/bin/west build -p auto -b rpi_pico ./'
+  topdir: '/home/ezhil/embedded/zephyr_workspace'
+  version: '1.5.0'

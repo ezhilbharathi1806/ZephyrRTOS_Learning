@@ -1,0 +1,3 @@
+/home/ezhil/embedded/zephyr_workspace/apps_learning/10_device_tree/01_gpio_interrupt/build/bootloader/CMakeFiles/boot_stage2.dir
+/home/ezhil/embedded/zephyr_workspace/apps_learning/10_device_tree/01_gpio_interrupt/build/bootloader/CMakeFiles/edit_cache.dir
+/home/ezhil/embedded/zephyr_workspace/apps_learning/10_device_tree/01_gpio_interrupt/build/bootloader/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,34 @@
+/*
+ * Overlay for Raspberry Pi Pico + BME280 on I2C0
+ * Default wiring (recommended):
+ *   SDA → GPIO 4 (physical pin 6)
+ *   SCL → GPIO 5 (physical pin 7)
+ *   VCC → 3.3 V
+ *   GND → GND
+ *   SDO  → GND   → address 0x76 (most common)
+ *         or VCC → address 0x77
+ * Add external 4.7 kΩ pull-up resistors on SDA & SCL if not already present.
+ */
+
+/ {
+    aliases {
+        bme280-sensor = &bme280;
+    };
+};
+
+/* Enable I2C0 controller */
+&i2c0 {
+    status = "okay";
+    clock-frequency = <100000>;     /* 100 kHz – safe and reliable for BME280 */
+
+    /* Use the board's default pin assignment (GPIO4 SDA, GPIO5 SCL) */
+    /* pinctrl-0 = <&i2c0_default>;   ← usually already set in base DTS, but safe to add */
+    /* pinctrl-names = "default";     ← same */
+
+    bme280: bme280@76 {
+        compatible = "bosch,bme280";
+        reg = <0x76>;                   /* 0x76 if SDO = GND, 0x77 if SDO = VCC */
+        label = "BME280";
+        status = "okay";
+    };
+};

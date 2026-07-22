@@ -1,0 +1,7 @@
+# ninja log v5
+2	50	1769881256601025240	CMakeFiles/boot_stage2.dir/home/ezhil/embedded/zephyr_workspace/modules/hal/rpi_pico/src/rp2040/boot_stage2/boot2_w25q080.S.obj	9b88c1d89a00ed17
+51	169	1769881256716022769	boot_stage2	17d5d9aeca90be1
+51	169	1769881256716022769	boot_stage2.bin	17d5d9aeca90be1
+51	169	1769881256716022769	boot_stage2.S	17d5d9aeca90be1
+51	169	1769881256716022769	/home/ezhil/embedded/zephyr_workspace/apps/06_demo_device_driver/build/bootloader/boot_stage2.bin	17d5d9aeca90be1
+51	169	1769881256716022769	/home/ezhil/embedded/zephyr_workspace/apps/06_demo_device_driver/build/bootloader/boot_stage2.S	17d5d9aeca90be1

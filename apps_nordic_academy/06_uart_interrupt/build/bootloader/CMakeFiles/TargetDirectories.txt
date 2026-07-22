@@ -1,0 +1,3 @@
+/home/ezhil/embedded/zephyr_workspace/apps_nordic_academy/06_uart_interrupt/build/bootloader/CMakeFiles/boot_stage2.dir
+/home/ezhil/embedded/zephyr_workspace/apps_nordic_academy/06_uart_interrupt/build/bootloader/CMakeFiles/edit_cache.dir
+/home/ezhil/embedded/zephyr_workspace/apps_nordic_academy/06_uart_interrupt/build/bootloader/CMakeFiles/rebuild_cache.dir

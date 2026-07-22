@@ -1,0 +1,3 @@
+/home/ezhil/embedded/zephyr_workspace/apps/06_demo_device_driver/build/bootloader/CMakeFiles/boot_stage2.dir
+/home/ezhil/embedded/zephyr_workspace/apps/06_demo_device_driver/build/bootloader/CMakeFiles/edit_cache.dir
+/home/ezhil/embedded/zephyr_workspace/apps/06_demo_device_driver/build/bootloader/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/ezhil/embedded/zephyr_workspace/apps_learning/11_i2c0_scan/build/bootloader/CMakeFiles/boot_stage2.dir
+/home/ezhil/embedded/zephyr_workspace/apps_learning/11_i2c0_scan/build/bootloader/CMakeFiles/edit_cache.dir
+/home/ezhil/embedded/zephyr_workspace/apps_learning/11_i2c0_scan/build/bootloader/CMakeFiles/rebuild_cache.dir

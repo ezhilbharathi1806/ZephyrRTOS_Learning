@@ -1,0 +1,45 @@
+/ {
+    aliases {
+        my-button-1 = &button_1;
+        my-button-2 = &button_2;
+    };
+
+    custom-buttons {
+        button_1: custom_button_1 {
+            compatible = "custom,button";
+            pin = <&p0>;
+        };
+
+        button_2: custom_button_2 {
+            compatible = "custom,button";
+            pin = <&p1>;
+        };
+    };
+
+    gpio-keys {
+        compatible = "gpio-keys";
+        debounce-interval-ms = <50>;
+        polling-mode;
+
+        p0: gpio0 {
+            gpios = <&gpio0 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+            zephyr,code = <0>;
+        };
+
+        p1: gpio1 {
+            gpios = <&gpio0 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+            zephyr,code = <1>;
+        };
+    };
+
+	chosen {
+        zephyr,console = &cdc_acm_uart0;
+    };
+};
+
+&zephyr_udc0 {
+    cdc_acm_uart0: cdc_acm_uart0 {
+        compatible = "zephyr,cdc-acm-uart";
+        label = "CDC_ACM_0";
+    };
+};

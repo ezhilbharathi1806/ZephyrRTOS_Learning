@@ -1,0 +1,33 @@
+/ {
+    aliases {
+        btn-0 = &button_0;
+        btn-1 = &button_1;
+    };
+
+    buttons {
+        compatible = "gpio-keys";
+        debounce-interval-ms = <50>;
+        polling-mode;
+
+        button_0: gp0 {
+            gpios = <&gpio0 0 GPIO_ACTIVE_LOW>;
+            zephyr,code = <0>;
+        };
+
+        button_1: gp1 {
+            gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
+            zephyr,code = <1>;
+        };
+    };
+
+	chosen {
+        zephyr,console = &cdc_acm_uart0;
+    };
+};
+
+&zephyr_udc0 {
+    cdc_acm_uart0: cdc_acm_uart0 {
+        compatible = "zephyr,cdc-acm-uart";
+        label = "CDC_ACM_0";
+    };
+};

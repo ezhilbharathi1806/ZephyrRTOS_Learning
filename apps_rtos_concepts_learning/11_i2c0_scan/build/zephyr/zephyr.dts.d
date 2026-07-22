@@ -1,0 +1,33 @@
+empty_file.o: \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/misc/empty_file.c \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/boards/raspberrypi/rpi_pico/rpi_pico.dts \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/boards/raspberrypi/rpi_pico/rpi_pico-common.dtsi \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/dts/common/freq.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/dts/arm/raspberrypi/rpi_pico/rp2040.dtsi \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/dts/arm/armv6-m.dtsi \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/dts/common/skeleton.dtsi \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/sys/util_macro.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/sys/util_internal.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/sys/util_loops.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/sys/util_listify.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/clock/rpi_pico_rp2040_clock.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/clock/rpi_pico_clock_common.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/regulator/rpi_pico.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/reset/rp2040_reset.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/dts/common/mem.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/dts/arm/raspberrypi/rpi_pico/override.dtsi \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/boards/raspberrypi/rpi_pico/rpi_pico-pinctrl.dtsi \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/pinctrl/rpi-pico-pinctrl-common.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/boards/raspberrypi/rpi_pico/../common/rpi_pico-pinctrl-common.dtsi \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
+ /home/ezhil/embedded/zephyr_workspace/zephyr/boards/raspberrypi/rpi_pico/../common/rpi_pico-led.dtsi \
+ /home/ezhil/embedded/zephyr_workspace/apps_learning/11_i2c0_scan/boards/rpi_pico.overlay

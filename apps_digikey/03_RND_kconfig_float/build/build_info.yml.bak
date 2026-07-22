@@ -1,0 +1,5 @@
+west:
+  command: /home/ezhil/embedded/zephyr_workspace/zephyr-env/bin/west build -p auto
+    -b rpi_pico -t menuconfig
+  topdir: /home/ezhil/embedded/zephyr_workspace
+  version: 1.5.0

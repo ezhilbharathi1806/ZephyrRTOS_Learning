@@ -1,0 +1,4 @@
+"cmsis":"/home/ezhil/embedded/zephyr_workspace/modules/hal/cmsis":"${ZEPHYR_CMSIS_CMAKE_DIR}"
+"cmsis_6":"/home/ezhil/embedded/zephyr_workspace/modules/hal/cmsis_6":"${ZEPHYR_CMSIS_6_CMAKE_DIR}"
+"hal_rpi_pico":"/home/ezhil/embedded/zephyr_workspace/modules/hal/rpi_pico":"${ZEPHYR_HAL_RPI_PICO_CMAKE_DIR}"
+"say_hello":"/home/ezhil/embedded/zephyr_workspace/apps/03_demo_kconfig/../../modules/say_hello":"/home/ezhil/embedded/zephyr_workspace/modules/say_hello"

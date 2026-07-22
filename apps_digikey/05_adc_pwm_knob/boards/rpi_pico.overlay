@@ -1,0 +1,50 @@
+// Define PWM_POLARITY_NORMAL
+#include <zephyr/dt-bindings/pwm/pwm.h>
+
+/ {
+    aliases {
+        
+        my-adc = &adc;
+        my-adc-channel = &adc_ch0;
+        led-0 = &led_0;
+    };
+
+    // User-defined node for configuring "pwm-leds" subnodes
+    // <{LED controller node}, channel, period, flags>
+    my-pwm-leds {
+        compatible = "pwm-leds";
+        led_0: pwm_led_0 {
+            pwms = <&pwm 7 1000000 PWM_POLARITY_NORMAL>;
+        };
+    };
+
+	chosen {
+        zephyr,console = &cdc_acm_uart0;
+    };
+};
+
+&adc {
+    status = "okay";
+    #address-cells = <1>;
+    #size-cells = <0>;
+
+    adc_ch0: channel@0 {
+        reg = <0>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,vref-mv = <3300>;
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+};
+
+&pwm {
+    status = "okay";
+};
+
+&zephyr_udc0 {
+    cdc_acm_uart0: cdc_acm_uart0 {
+        compatible = "zephyr,cdc-acm-uart";
+        label = "CDC_ACM_0";
+    };
+};

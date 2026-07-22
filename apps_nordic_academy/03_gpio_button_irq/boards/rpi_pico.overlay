@@ -1,0 +1,15 @@
+/ {
+    aliases {
+        my-led = &led0;
+        my-button = &button0;
+    };
+
+    buttons {
+        compatible = "gpio-keys";
+
+        button0: button_0 {
+            gpios = <&gpio0 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+            label = "User Button";
+        };
+    };
+};

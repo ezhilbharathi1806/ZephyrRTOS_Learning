@@ -1,0 +1,24 @@
+menu "cmsis (/home/ezhil/embedded/zephyr_workspace/modules/hal/cmsis)"
+osource "$(ZEPHYR_CMSIS_KCONFIG)"
+config ZEPHYR_CMSIS_MODULE
+	bool
+	default y
+endmenu
+menu "cmsis_6 (/home/ezhil/embedded/zephyr_workspace/modules/hal/cmsis_6)"
+osource "$(ZEPHYR_CMSIS_6_KCONFIG)"
+config ZEPHYR_CMSIS_6_MODULE
+	bool
+	default y
+endmenu
+menu "hal_rpi_pico (/home/ezhil/embedded/zephyr_workspace/modules/hal/rpi_pico)"
+osource "$(ZEPHYR_HAL_RPI_PICO_KCONFIG)"
+config ZEPHYR_HAL_RPI_PICO_MODULE
+	bool
+	default y
+endmenu
+menu "button (/home/ezhil/embedded/zephyr_workspace/apps/06_demo_device_driver/../../modules/button)"
+osource "/home/ezhil/embedded/zephyr_workspace/modules/button/Kconfig"
+config ZEPHYR_BUTTON_MODULE
+	bool
+	default y
+endmenu
